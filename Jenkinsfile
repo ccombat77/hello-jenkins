@@ -16,9 +16,9 @@ pipeline {
             }
         }
         
-        stage ('Deploy') {
+        stage ('Packaging') {
             steps {
-                sh 'mvn deploy'                              
+                sh 'mvn package'                              
             }
         }
     }
